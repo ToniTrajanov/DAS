@@ -1,5 +1,6 @@
+package mk.ukim.finki.dashw.filter;
 
-
+import mk.ukim.finki.dashw.pipe.Pipe;
 
 public class PipeAndFilterProblem {
     public static void main(String[] args) {
@@ -13,16 +14,16 @@ public class PipeAndFilterProblem {
         StreetFilter streetFilter = new StreetFilter();
         ApostropheeFilter apostropheeFilter = new ApostropheeFilter();
 
-//        pipe.addFilter(deleteRowsFilter);
-//        pipe.addFilter(capitalLetterFilter);
+        pipe.addFilter(deleteRowsFilter);
+        pipe.addFilter(capitalLetterFilter);
         pipe.addFilter(ratingsFilter);
-//        pipe.addFilter(streetFilter);
-//        pipe.addFilter(alignmentFilter);
-//        pipe.addFilter(apostropheeFilter);
+        pipe.addFilter(streetFilter);
+        pipe.addFilter(alignmentFilter);
+        pipe.addFilter(apostropheeFilter);
 
 
 
-//        pipe.runFilter("hospitals_data.xlsx");
+        pipe.runFilter("hospitals_data.xlsx");
         pipe.runFilter("pharmacies_data.xlsx");
     }
 }

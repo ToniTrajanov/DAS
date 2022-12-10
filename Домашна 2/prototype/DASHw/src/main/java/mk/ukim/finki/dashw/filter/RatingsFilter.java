@@ -1,6 +1,9 @@
+package mk.ukim.finki.dashw.filter;
+
 import com.spire.xls.ExcelVersion;
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
+import mk.ukim.finki.dashw.filter.Filter;
 
 public class RatingsFilter implements Filter<String> {
     @Override
